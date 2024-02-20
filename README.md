@@ -27,7 +27,7 @@ This Python script is designed to monitor specified files within a directory and
 ## Parameters
 
 - `directory`: Path to the directory containing the files to be monitored.
-- `min_`: Interval (in minutes) at which the script checks for modifications in the specified files.
+- `min_`: timeout (in minutes) at which the script stops after no modification made for continuously for n minutes  .
 - `files_to_check`: Tuple containing the names of the files to be monitored. If multiple files are specified, the script monitors all of them. If only one file is specified, the script monitors that file only.
 
 ## Example
@@ -40,7 +40,7 @@ if __name__ == '__main__':
     # Example file names to monitor
     files_to_check = ("LeftIris.bmp", "RightIris.bmp")
     
-    # Interval for checking modifications (in minutes)
+    # Timeout for checking modifications (in minutes)
     interval_minutes = 5
     
     # Call the always_find method
