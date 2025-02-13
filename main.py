@@ -49,7 +49,7 @@ def write_img(directory, full_path):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    path = r"C:\Users\Mantra\Documents\apps\Iris_App\Marvis_Enroll\x64"
+    path = r"C:\Users\vc\Documents\apps\app_App\4"
     stop_flag = False
-    files_to_check = ("LeftIris.bmp", "RightIris.bmp")
+    files_to_check = ("Left.bmp", "Right.bmp")
     always_find(path, 5, files_to_check)
